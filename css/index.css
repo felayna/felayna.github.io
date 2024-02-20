@@ -1,0 +1,9 @@
+.mainBox .contentBox {
+    margin-top: 15px;
+    margin-left: 40px;
+    width: 1100px;
+}
+.mainBox .contentBox h1 {
+    margin-top: 25px;
+    margin-left: 500px;
+}
