@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // 创建一个新的 <object> 元素来加载模块
     const objectElement = document.createElement("object");
     objectElement.type = "text/html";
-    objectElement.data = "..\html\naviBar.html"; // 加载模块文件
+    objectElement.data = "../html/naviBar.html"; // 加载模块文件
     objectElement.width = "100%"; // 设置宽度
     objectElement.height = "3000px"; // 设置高度
     objectElement.style.border = "none"; // 设置边框样式
