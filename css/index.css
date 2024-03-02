@@ -21,3 +21,18 @@
 .clock #date {
     font-size: 18px;
 }
+
+.mainBox #naviBox .naviByUnit h1 {
+    margin-left: 30px;
+    font: bold 27px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #708090;
+}
+.mainBox #naviBox .naviByUnit h3 {
+    margin-top: 20px;
+    font: bold 22px/1.2 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #708090;
+}
+.mainBox #naviBox .naviByUnit ul li a {
+    font:  12px/1.2 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+}
+  
