@@ -3,13 +3,26 @@ document.addEventListener("DOMContentLoaded", function() {
     // 获取模块容器
     const container = document.getElementById("naviBox");
     
-    // 创建一个新的 <object> 元素来加载模块
-    const objectElement = document.createElement("object");
-    objectElement.type = "text/html";
-    objectElement.data = "../html/naviBar.html"; // 加载模块文件
-    objectElement.width = "100%"; // 设置宽度
-    objectElement.height = "2500px"; // 设置高度
-    objectElement.style.border = "none"; // 设置边框样式
-    objectElement.style.overflow = "hidden"; // 设置溢出隐藏
-    container.appendChild(objectElement); // 将模块插入容器中
+    // 发起网络请求获取 HTML 内容
+    fetch("../html/naviBar.html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.text();
+        })
+        .then(html => {
+            // 将加载的 HTML 内容直接插入到容器中
+            container.innerHTML = html;
+
+            // 设置容器样式
+            container.style.width = "100%";
+            container.style.height = "2500px";
+            container.style.border = "none";
+            container.style.overflow = "hidden";
+        })
+        .catch(error => {
+            console.error("Error fetching naviBar.html:", error);
+        });
 });
+
