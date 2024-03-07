@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>感谢点击！</title>
+</head>
+<!-- 引入css和js -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <style>
+        .w .contentBox {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .contentBox h1 {
+            margin-left: 650px;
+            margin-bottom: 50px;
+            width: 300px;
+            height: 50px;
+            line-height: 50px;
+            font: bold 50px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+        }
+        .contentBox p {
+            font: 25px/2.0 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+        }
+        #imgBox {
+            display: none;
+            margin-top: 50px;
+            margin-left: 800px;
+            width: 600px;
+            height: 350px;
+        }
+        #imgBox img {
+            margin-right: 10px;
+            width: 200px;
+            height: 300px;
+        }
+        button {
+            margin-left: 900px;
+            border: 2px solid #000;
+            width: 100px;
+            line-height: 20px;
+            text-align: center;
+            font: 20px Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+       <!-- 版头 -->
+    <div class="shortCut">
+       <div class="w">
+           <ul class="headTitle">
+               <li><a href="../index.html">强袭魔女中文资料站</a></li>
+           </ul>
+           <div class="search">
+               <input type="search" name="" id="" placeholder="搜索（暂未解锁）">
+           </div>
+           <ul class="signIn">
+               <li>
+                   <a href="#">暂不开放注册开放功能</a>
+               </li>
+           </ul>
+       </div>
+    </div>
+
+    <!-- 中间内容部分 -->
+    <div class="mainBox w">
+        <div class="contentBox">
+            <h1>重要说明！</h1>
+        <p>首先，感谢您点击这个链接。<br>
+            其次，要做出说明的是，赞助全凭自己的意愿，绝不强求。<br>
+            第三，也是最重要的一点！未成年人（未满十八岁）切勿点击！如果您是未成年人，不小心支付了赞助金额，请及时联系本人。本人在查清账目后的第一时间会退款给您。<br>
+            第四，如果您愿意赞助本人制作、维护该网站，那是再好不过了。但还请不要付出太高的金额，以免对您自己的生活产生影响。10CNY以下足矣。<br>
+            最后，如果您在知晓了上述说明的情况下依旧决定自愿赞助作者，请点击下方按钮获取支付的二维码。<br>
+            最后祝您身体健康，学习工作一帆风顺，万事如意，阖家欢乐！
+        </p>
+        </div>
+    </div>
+    <div id="imgBox">
+        <img src="../images/QRcode/AliPay.jpg" alt="奇怪，图片怎么不见了？">
+        <img src="../images/QRcode/WeChat.jpg" alt="奇怪，图片怎么不见了？">
+    </div>
+    <button>请点击</button>
+
+
+
+
+    <!-- 底部 -->
+    <div class="footer">
+       <div class="w">
+           <div class="copyRight">
+               © 2024 Felayna
+               <br>
+               本网站图文均出自官方资料，未经允许，不得将网页内容用于商业，违者后果自负，本网站不承担任何责任<br>
+               本网站只提供web页面服务，并不提供影片资源存储，也不参与录制、上传<br>
+               若本站收录的节目无意侵犯了贵司版权，请联系我们，我们会及时处理和回复，谢谢
+
+           </div>
+           <div class="links">
+               <a href="#" id="conUs">联系我们</a>
+               <li></li>
+               <a href="#">请求赞助</a>
+               <li></li>
+               <a href="#">小说连载</a>
+               <li></li>
+               <!-- <a href="#">相关视频</a>
+               <li></li> -->
+               <a href="#">网盘资源</a>
+           </div>
+           <!-- <div class="birthPart">
+               今天是……的生日
+           </div> -->
+           <div class="clock">
+               <div id="time"></div>
+               <div id="date"></div>
+           </div>
+           <script src="../scripts/clock.js"></script>
+       </div>
+    </div>
+    <script src="../scripts/common.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const Button = document.getElementsByTagName("button");
+            const imgs = document.getElementById("imgBox");
+            Button[0].addEventListener("click", function() {
+                if (imgs.style.display === "none") {
+                    imgs.style.display = "block";
+                }
+                else {
+                        imgs.style.display = "none";
+                    };
+           })
+        })
+    </script>
+</body>
+</html>
