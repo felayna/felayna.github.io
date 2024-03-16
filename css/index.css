@@ -7,20 +7,7 @@
     margin-top: 25px;
     margin-left: 500px;
 }
-/* 时钟模块 */
-.clock {
-    margin-top: 20px;
-    margin-right: 5px;
-    width: 300px;
-    text-align: center;
-    font-size: 24px;
-}
-.clock #time {
-    margin-bottom: 10px;
-}
-.clock #date {
-    font-size: 18px;
-}
+
 
 .mainBox #naviBox .naviByUnit h1 {
     margin-left: 30px;
