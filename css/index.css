@@ -22,4 +22,10 @@
 .mainBox #naviBox .naviByUnit ul li a {
     font:  12px/1.2 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
 }
-  
+.mainBox #naviBox .contentBox .newsbox ul {
+    margin:10px 0 10px 5px;
+    font: bold 22px/1.2 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+}
+.mainBox #naviBox .contentBox .newsbox ul li {
+    font:  12px/1.2 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+}
