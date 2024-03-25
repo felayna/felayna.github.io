@@ -5,7 +5,7 @@
 }
 .introBox {
     position: relative;
-    height: 900px;
+    height: 4000px;
 }
 .introBox .imgBox_CharaDes {
     position: absolute;
@@ -46,6 +46,10 @@
 .mainBox .introPart .data img {
     width: 125px;
     height: 160px;
+}
+#largeSize {
+    width: 425px;
+    height: 610px;
 }
 .mainBox .introPart .data p {
     display: block;
